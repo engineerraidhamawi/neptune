@@ -1,4 +1,4 @@
-// 1. Splash Screen Logic
+// 1. Splash Screen Logic (Backup)
 function enterSite() {
     document.getElementById('splash-screen').classList.add('hidden');
 }
