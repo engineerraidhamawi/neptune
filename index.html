@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neptune Drive | Redefining Humanity's Relationship with the Oceans</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&family=Montserrat:wght@200;300;400;600;700&family=Roboto+Mono:wght@300;400&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- SPLASH SCREEN (Legal Disclaimer - Bilingual Side-by-Side) -->
+    <div id="splash-screen">
+        <div class="splash-content">
+            
+            <!-- English Section -->
+            <div class="lang-block en-block">
+                <h1 class="splash-title">IMPORTANT LEGAL NOTICE</h1>
+                <p>
+                    This website and all its contents — including project concepts, engineering designs, technical specifications, illustrations, trade names, and trademarks — are the exclusive property of Neptune Drive.
+                    <br><br>
+                    All concepts, designs, and technologies presented herein are protected by registered international patents and intellectual property rights.
+                    <br><br>
+                    Any copying, reproduction, quotation, imitation, or use of the ideas, designs, or materials — in whole or in part — without prior written authorization is strictly prohibited and constitutes a legal violation subject to civil and criminal liability.
+                    <br><br>
+                    By clicking "I Acknowledge" below, you confirm that you have read, understood, and agreed to abide by this notice.
+                </p>
+            </div>
+
+            <!-- Arabic Section -->
+            <div class="lang-block ar-block" dir="rtl">
+                <h1 class="splash-title">إشعار قانوني هام</h1>
+                <p>
+                    هذا الموقع وكل محتوياته — بما في ذلك مفاهيم المشاريع والتصميمات الهندسية والمواصفات الفنية والرسوم التوضيحية والأسماء التجارية والعلامات التجارية — هي ملكية حصرية لشركة Neptune Drive.
+                    <br><br>
+                    جميع المفاهيم والتصميمات والتقنيات المقدمة هنا محمية بموجب براءات اختراع دولية مسجلة وحقوق الملكية الفكرية.
+                    <br><br>
+                    يُحظر تمامًا نسخ أو إعادة إنتاج أو اقتباس أو تقليد أو استخدام الأفكار أو التصميمات أو المواد — كليًا أو جزئيًا — دون إذن كتابي مسبق، ويعتبر انتهاكًا قانونيًا يعرض صاحبه للمساءلة المدنية والجنائية.
+                    <br><br>
+                    بالنقر على "أنا أقر" أدناه، فإنك تؤكد أنك قد قرأت وفهمت ووافقت على الالتزام بهذا الإشعار.
+                </p>
+            </div>
+
+            <button id="acknowledge-btn" onclick="enterSite()">
+                I Acknowledge | أنا أقر
+            </button>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <header>
+        <div class="logo"><a href="index.html">NEPTUNE DRIVE</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                <li><a href="index.html#projects" data-en="Projects" data-ar="المشاريع">Projects</a></li>
+                <li><a href="leadership.html" data-en="About" data-ar="من نحن">About</a></li>
+                <li><a href="index.html#contact" data-en="Contact" data-ar="تواصل">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="lang-toggle" onclick="toggleLanguage()">عربي</button>
+    </header>
+
+    <!-- HOME PAGE -->
+    <main id="home">
+        
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>NEPTUNE DRIVE</h1>
+                <p class="subheadline" data-en="Redefining Humanity's Relationship with the Oceans" data-ar="إعادة تشكيل علاقة البشرية بالمحيطات">Redefining Humanity's Relationship with the Oceans</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary" data-en="Explore Our Projects" data-ar="استكشف مشاريعنا">Explore Our Projects</a>
+                    <a href="#contact" class="btn secondary" data-en="Request a Meeting" data-ar="طلب اجتماع">Request a Meeting</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <h2 class="section-title" data-en="Who We Are" data-ar="من نحن">Who We Are</h2>
+            <p class="text-body" data-en="Neptune Drive is a pioneering initiative developing the world's first integrated family of autonomous underwater systems. We are export-control-free, sovereign in design, and committed to delivering affordable, scalable, and sustainable solutions." data-ar="نبتون درايف مبادرة رائدة تطور أول عائلة متكاملة من الأنظمة تحت المائية ذاتية القيادة. نحن أحرار من قيود التصدير، وذاك سيادي في التصميم، وملتزمون بتقديم حلول ميسورة التكلفة وقابلة للتطوير ومستدامة.">
+                Neptune Drive is a pioneering initiative developing the world's first integrated family of autonomous underwater systems. We are export-control-free, sovereign in design, and committed to delivering affordable, scalable, and sustainable solutions.
+            </p>
+            <div class="features-grid">
+                <div class="feature-card"><span>🤖</span><h3 data-en="AI-Powered" data-ar="مدعوم بالذكاء الاصطناعي">AI-Powered</h3></div>
+                <div class="feature-card"><span>⚙️</span><h3 data-en="Fully Autonomous" data-ar="ذاتية القيادة بالكامل">Fully Autonomous</h3></div>
+                <div class="feature-card"><span>🌍</span><h3 data-en="Export-Control-Free" data-ar="خالٍ من قيود التصدير">Export-Control-Free</h3></div>
+                <div class="feature-card"><span>🌿</span><h3 data-en="Zero Emissions" data-ar="صفر انبعاثات">Zero Emissions</h3></div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="content-section dark-bg">
+            <h2 class="section-title" data-en="Our Six Integrated Projects" data-ar="مشاريعنا الستة المتكاملة">Our Six Integrated Projects</h2>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img-placeholder">IMG</div>
+                    <h3>Neptune Drive</h3>
+                    <p data-en="Autonomous Container Shipping. 60% lower cost, zero emissions, immune to storms." data-ar="شحن الحاويات ذاتي القيادة. تكلفة أقل بنسبة 60٪، انبعاثات صفرية، محصن ضد العواصف.">Autonomous Container Shipping. 60% lower cost, zero emissions, immune to storms.</p>
+                    <a href="#" class="btn-link" data-en="Learn More" data-ar="المزيد">Learn More &rarr;</a>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img-placeholder">IMG</div>
+                    <h3>Neptune Deep Drive</h3>
+                    <p data-en="Ocean Exploration & Data Collection. AI-powered geological and biological data." data-ar="استكشاف المحيطات وجمع البيانات. بيانات جيولوجية وبيولوجية مدعومة بالذكاء الاصطناعي.">Ocean Exploration & Data Collection. AI-powered geological and biological data.</p>
+                    <a href="#" class="btn-link" data-en="Learn More" data-ar="المزيد">Learn More &rarr;</a>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img-placeholder">IMG</div>
+                    <h3>Neptune Deep Map</h3>
+                    <p data-en='Smart Ocean Mapping. The "Google Maps" of the underwater world.' data-ar="خرائط المحيطات الذكية. خرائط جوجل للعالم تحت الماء.">Smart Ocean Mapping. The "Google Maps" of the underwater world.</p>
+                    <a href="#" class="btn-link" data-en="Learn More" data-ar="المزيد">Learn More &rarr;</a>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card serpent-theme">
+                    <div class="project-img-placeholder">IMG</div>
+                    <h3>Neptune Serpent</h3>
+                    <p data-en="Autonomous Combat Drone. 90% cheaper than torpedoes, unmatched stealth." data-ar="مسيرة قتالية ذاتية القيادة. أرخص بنسبة 90٪ من الطوربيدات، خفية لا مثيل لها.">Autonomous Combat Drone. 90% cheaper than torpedoes, unmatched stealth.</p>
+                    <a href="serpent.html" class="btn-link" data-en="Learn More" data-ar="المزيد">Learn More &rarr;</a>
+                </div>
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-img-placeholder">IMG</div>
+                    <h3>Neptune Flyte</h3>
+                    <p data-en="Civilian Passenger Transport. Luxury underwater travel at 70% lower cost." data-ar="نقل الركاب المدني. سفر فاخر تحت الماء بتكلفة أقل بنسبة 70٪.">Civilian Passenger Transport. Luxury underwater travel at 70% lower cost.</p>
+                    <a href="#" class="btn-link" data-en="Learn More" data-ar="المزيد">Learn More &rarr;</a>
+                </div>
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-img-placeholder">IMG</div>
+                    <h3>Neptune Legion</h3>
+                    <p data-en="Military Troop Transport. 80-90% cheaper than helicopters with digital camouflage." data-ar="نقل القوات العسكرية. أرخص بنسبة 80-90٪ من المروحيات مع تمويه رقمي.">Military Troop Transport. 80-90% cheaper than helicopters with digital camouflage.</p>
+                    <a href="#" class="btn-link" data-en="Learn More" data-ar="المزيد">Learn More &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stat-item"><h2>6</h2><p data-en="Integrated Projects" data-ar="مشاريع متكاملة">Integrated Projects</p></div>
+            <div class="stat-item"><h2>20+</h2><p data-en="International Patents" data-ar="براءات اختراع دولية">International Patents</p></div>
+            <div class="stat-item"><h2>$5B+</h2><p data-en="Projected Annual Revenue" data-ar="الإيرادات السنوية المتوقعة">Projected Annual Revenue</p></div>
+            <div class="stat-item"><h2>100%</h2><p data-en="Export-Control-Free" data-ar="خالٍ من قيود التصدير">Export-Control-Free</p></div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Neptune Drive. All Rights Reserved.</p>
+        <p>Patent Registered | Export Control Free | Confidential & Proprietary</p>
+        <p style="margin-top: 20px;"><a href="legal.html" style="color: #8A9099; text-decoration: none; border-bottom: 1px solid transparent;" data-en="Legal & IP" data-ar="الشؤون القانونية">Legal & IP</a></p>
+    </footer>

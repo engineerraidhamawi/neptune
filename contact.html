@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Neptune Drive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&family=Montserrat:wght@200;300;400;600;700&family=Roboto+Mono:wght@300;400&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="serpent-body">
+
+    <!-- NAVIGATION -->
+    <header class="serpent-header">
+        <div class="logo"><a href="index.html">NEPTUNE DRIVE</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                <li><a href="index.html#projects" data-en="Projects" data-ar="المشاريع">Projects</a></li>
+                <li><a href="leadership.html" data-en="Leadership" data-ar="القيادة">Leadership</a></li>
+                <li><a href="contact.html" data-en="Contact" data-ar="تواصل" style="color: #E2E6EA; border-bottom: 1px solid #E2E6EA;">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="lang-toggle" onclick="toggleLanguage()">عربي</button>
+    </header>
+
+    <!-- CONTACT PAGE -->
+    <main id="contact-page">
+        
+        <!-- Hero Section -->
+        <section class="page-banner">
+            <div class="project-hero-overlay"></div>
+            <div class="project-hero-content">
+                <h1 data-en="Contact Us" data-ar="تواصل معنا">Contact Us</h1>
+                <p class="project-subheadline" data-en="We welcome inquiries from governments, defense entities, investors, and strategic partners." data-ar="نرحب باستفسارات الحكومات والكيانات الدفاعية والمستثمرين والشركاء الاستراتيجيين.">We welcome inquiries from governments, defense entities, investors, and strategic partners.</p>
+            </div>
+        </section>
+
+        <!-- Offices Section -->
+        <section class="content-section">
+            <h2 class="section-title" data-en="Our Locations" data-ar="مواقعنا">Our Locations</h2>
+            <div class="offices-grid">
+                <div class="office-card">
+                    <h3 data-en="Headquarters" data-ar="المقر الرئيسي">Headquarters</h3>
+                    <p class="office-region" data-en="Saudi Arabia – Riyadh" data-ar="المملكة العربية السعودية - الرياض">Saudi Arabia – Riyadh</p>
+                    <p class="office-detail">Neptune Drive</p>
+                    <p class="office-detail">Kingdom of Saudi Arabia</p>
+                    <p class="office-detail"><a href="tel:+966505285721" class="contact-link">+966 505285721</a></p>
+                    <p class="office-detail"><a href="mailto:subhi@neptunedrive.net" class="contact-link">subhi@neptunedrive.net</a></p>
+                </div>
+                <div class="office-card">
+                    <h3 data-en="Regional Office" data-ar="المكتب الإقليمي">Regional Office</h3>
+                    <p class="office-region" data-en="Egypt – Cairo" data-ar="مصر - القاهرة">Egypt – Cairo</p>
+                    <p class="office-detail">Neptune Drive Egypt</p>
+                    <p class="office-detail">Arab Republic of Egypt</p>
+                    <p class="office-detail"><a href="mailto:egypt@neptunedrive.net" class="contact-link">egypt@neptunedrive.net</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="content-section dark-bg">
+            <h2 class="section-title" data-en="Send a Message" data-ar="إرسال رسالة">Send a Message</h2>
+            
+            <!-- THE FIX IS RIGHT HERE ON THIS LINE -->
+            <form class="contact-form" action="https://formspree.io/f/mwlpqrnv" method="POST">
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label data-en="Full Name" data-ar="الاسم الكامل">Full Name</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-en="Company / Organization" data-ar="الشركة / المؤسسة">Company / Organization</label>
+                        <input type="text" name="company">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label data-en="Email Address" data-ar="البريد الإلكتروني">Email Address</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-en="Country" data-ar="الدولة">Country</label>
+                        <input type="text" name="country">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label data-en="Subject" data-ar="الموضوع">Subject</label>
+                    <input type="text" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Message" data-ar="الرسالة">Message</label>
+                    <textarea name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn primary" data-en="Send Message" data-ar="إرسال الرسالة">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Neptune Drive. All Rights Reserved.</p>
+        <p>Patent Registered | Export Control Free | Confidential & Proprietary</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
