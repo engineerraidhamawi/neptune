@@ -43,9 +43,9 @@
                 </p>
             </div>
 
-         <button id="acknowledge-btn" onclick="document.getElementById('splash-screen').classList.add('hidden');">
-    I Acknowledge | أنا أقر
-</button>
+            <button id="acknowledge-btn" onclick="document.getElementById('splash-screen').classList.add('hidden');">
+                I Acknowledge | أنا أقر
+            </button>
         </div>
     </div>
 
@@ -159,3 +159,35 @@
         <p>Patent Registered | Export Control Free | Confidential & Proprietary</p>
         <p style="margin-top: 20px;"><a href="legal.html" style="color: #8A9099; text-decoration: none; border-bottom: 1px solid transparent;" data-en="Legal & IP" data-ar="الشؤون القانونية">Legal & IP</a></p>
     </footer>
+
+    <script>
+        // 2. Language Toggle Logic
+        function toggleLanguage() {
+            const html = document.documentElement;
+            const langBtn = document.getElementById('lang-toggle');
+            
+            let currentLang = html.getAttribute('lang');
+
+            if (currentLang === 'en') {
+                // Switch to Arabic
+                html.setAttribute('lang', 'ar');
+                html.setAttribute('dir', 'rtl');
+                langBtn.innerText = 'English';
+                
+                document.querySelectorAll('[data-ar]').forEach(el => {
+                    el.innerText = el.getAttribute('data-ar');
+                });
+            } else {
+                // Switch to English
+                html.setAttribute('lang', 'en');
+                html.setAttribute('dir', 'ltr');
+                langBtn.innerText = 'عربي';
+                
+                document.querySelectorAll('[data-en]').forEach(el => {
+                    el.innerText = el.getAttribute('data-en');
+                });
+            }
+        }
+    </script>
+</body>
+</html>
